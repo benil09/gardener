@@ -3,16 +3,13 @@ import Cards from "./Components/Cards"
 import Container from "./Components/Container"
 
 function App() {
- 
   return (
     <>
-   <div className=" z-[0]   relative w-full h-screen bg-green-600/40">
-      <Background/>
-      <Container/>
-
-
-       
-     
+      <div className="relative w-full min-h-screen bg-green-600/40 z-0">
+        <Background />
+        <div className="relative z-10 p-4 sm:p-6 md:p-8">
+          <Container />
+        </div>
       </div>
     </>
   )
